@@ -5,10 +5,13 @@ With the rise of automation and machine learning, many programs that predict fut
 
 This code creates a basic Markov Chain that attempts to generate text in the same manner as the 'What Would I Say?' application.
 
+- Code: [markov py](https://github.com/nadasal/markov_sentence_generator/blob/master/src/markov.py)
+- Data: [alice txt](https://github.com/nadasal/markov_sentence_generator/blob/master/data/alice.txt)
+
 ### Implementation:
 
 ```
-In [1]: markov = markov('alice.txt')
+In [1]: markov = markov('../data/alice.txt')
 In [2]: markov.text_generator(25)
 
 ```
