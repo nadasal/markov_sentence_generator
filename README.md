@@ -11,6 +11,7 @@ This code creates a basic Markov Chain that attempts to generate text in the sam
 ### Implementation:
 
 ```
+
 In [1]: markov = markov('../data/alice.txt')
 In [2]: markov.text_generator(25)
 
