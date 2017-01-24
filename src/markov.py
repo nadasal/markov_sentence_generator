@@ -19,7 +19,7 @@ class markov(object):
     '''
     
     def __init__(self, file):
-        #Empty dictionary to store word occurrances
+        #Empty dictionary to store word occurrences
         self.collection = {}
         self.file = open(file)
         self.words = self.words_from_file()
@@ -38,6 +38,8 @@ class markov(object):
         #Set the cursor to the beginning of the text
         self.file.seek(0)
         text = self.file.read().lower()
+        #Removes alphanumeric characters, whitespace, underscores, and special characters
+        #Replaces them with a space
         text = re.sub(r'([^\s\w]|_)+', '', text).replace('\n', " ")
         words = text.split()
         return words
