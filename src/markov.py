@@ -19,7 +19,7 @@ class markov(object):
     '''
     
     def __init__(self, file):
-        #Empty dictionary to store word occurances
+        #Empty dictionary to store word occurrances
         self.collection = {}
         self.file = open(file)
         self.words = self.words_from_file()
